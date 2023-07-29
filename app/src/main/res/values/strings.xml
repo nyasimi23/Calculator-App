@@ -26,4 +26,6 @@
     <string name="op">OPERAND:</string>
     <string name="result">RESULT:</string>
 
+    <string name="err">Error: Division by zero</string>
+
 </resources>
