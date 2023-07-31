@@ -23,7 +23,8 @@
                 android:id="@+id/multiply"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/multi"  />
+                android:text="@string/multi"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/button1"
@@ -31,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/one"
                 android:onClick="button1"
-                />
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/button2"
@@ -39,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/two"
                 android:onClick="button2"
-                />
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/button3"
@@ -47,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/three"
                 android:onClick="button3"
-                />
+                style="?android:attr/buttonBarButtonStyle" />
 
         </TableRow>
 
@@ -60,7 +61,8 @@
                 android:id="@+id/divide"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/div" />
+                android:text="@string/div"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/button4"
@@ -68,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/four"
                 android:onClick="button4"
-                />
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/button5"
@@ -76,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/five"
                 android:onClick="button5"
-                />
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button6"
@@ -84,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/six"
                 android:onClick="button6"
-                />
+                style="?android:attr/buttonBarButtonStyle" />
 
         </TableRow>
 
@@ -98,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/sub"
 
-                />
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/button7"
@@ -106,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/seven"
                 android:onClick="button7"
-                />
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/button8"
@@ -114,7 +116,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/eight"
                 android:onClick="button8"
-                />
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/button9"
@@ -122,7 +124,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/nine"
                 android:onClick="button9"
-                />
+                style="?android:attr/buttonBarButtonStyle" />
 
         </TableRow>
 
@@ -135,7 +137,8 @@
                 android:id="@+id/add"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/add"  />
+                android:text="@string/add"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/refresh"
@@ -143,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/refresh"
                 android:layout_span="3"
-                />
+                style="?android:attr/buttonBarButtonStyle" />
 
 
 
@@ -168,13 +171,16 @@
                 android:id="@+id/firstResult"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:autofillHints=""
                 android:background="@android:color/transparent"
+                android:enabled="false"
+                android:hint="@string/no1"
+                android:inputType="number"
+                android:minHeight="48dp"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
-                android:inputType="text"
-                android:enabled="false"
-                android:layout_span="3"
-                />
+                tools:ignore="DuplicateSpeakableTextCheck" />
 
 
         </TableRow>
@@ -199,13 +205,16 @@
                 android:id="@+id/secondResult"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:autofillHints=""
                 android:background="@android:color/transparent"
+                android:enabled="false"
+                android:hint="@string/no2"
+                android:inputType="text"
+                android:minHeight="48dp"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
-                android:inputType="text"
-                android:enabled="false"
-                android:layout_span="3"
-                />
+                tools:ignore="DuplicateSpeakableTextCheck" />
 
 
         </TableRow>
@@ -235,7 +244,9 @@
                 android:inputType="text"
                 android:enabled="false"
                 android:layout_span="3"
-                />
+                android:hint="@string/opp"
+                android:minHeight="48dp"
+                android:autofillHints="" />
 
 
         </TableRow>
@@ -265,7 +276,9 @@
                 android:inputType="text"
                 android:enabled="false"
                 android:layout_span="3"
-                />
+                android:hint="@string/anss"
+                android:minHeight="48dp"
+                android:autofillHints="" />
 
 
         </TableRow>
@@ -278,6 +291,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,6 +25,10 @@
     <string name="no2">NUMBER 2:</string>
     <string name="op">OPERAND:</string>
     <string name="result">RESULT:</string>
+    <string name="anss">ans</string>
+    <string name="opp">op</string>
+    <string name="res2">no.2</string>
+    <string name="res1">no.1</string>
 
     <string name="err">Error: Division by zero</string>
 
